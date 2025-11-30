@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Course | CrashCourse Ed</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./CSS/mycourse.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="white-section container-fluid">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-header">
+            <a class="navbar-brand" href="./index.html">
+                <img class="logo" src="./img/logo.png" alt="Crash Course Ed's logo"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="./explore-all.html">Exlopre Courses</a>
+                    <a class="nav-link" href="./login.html">Login</a>
+                    <a class="nav-link" href="./signup.html">Sign Up</a>
+                    <a class="nav-link" href="./mycourse.html">My Course</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <section class="main-content">
+        <div class="row">
+            <div class="account-container blue-section col-lg-3">
+                <h2>Account</h2>
+                <p>You haven't logged into your account.</p>
+                <a href="./login.html" class="btn btn-warning">Login</a>
+                <p>- or -</p>
+                <a href="./signup.html" class="btn btn-warning">Sign Up</a>
+            </div>
+            <div class="joined-classes white-section col-lg-9">
+                <h2>Joined Classes</h2>
+                <div class="class">
+                    <div class="row">
+                        <div class="card col-lg-3 col-md-6">
+                            <img src="./img/machine-learning-course.png" class="card-img-top"
+                                alt="Foundations of Project Management course">
+                            <div class="card-body">
+                                <a href="./machine.html" class="card-title">
+                                    <h5>Machine Learning</h5>
+                                </a>
+                                <a href="./machine.html" class="btn btn-warning">View</a>
+                            </div>
+                        </div>
+                        <div class="card col-lg-3 col-md-6">
+                            <a href="./explore-all.html">
+                                <div class="card-img-top gray">
+                                    <p><i class="fa-solid fa-circle-plus"></i></p>
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <a href="./explore-all.html" class="card-title">
+                                    <h5>Add more course</h5>
+                                </a>
+                                <a href="./explore-all.html" class="btn btn-warning">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

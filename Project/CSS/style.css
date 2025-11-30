@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.container-fluid {
+    padding: 0 5%;
+}
+
+.blue-section {
+    background-color: #0067b3;
+    color: white;
+}
+
+.white-section {
+    background-color: white;
+    color: #0067b3;
+}
+
+.btn{
+    font-weight: 600;
+    color: #0c2d48;
+    border: none;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background-color: #0c2d48;
+    color: white;
+}
+
+/* 1.Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-header {
+    background-color: white !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 150px;
+    height: 90px;
+}
+
+.nav-link {
+    color: #0067b3;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #0c2d48;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 2px 2px 0 0 rgb(255, 255, 255, 0.5);
+}
+
+.navbar-toggler>i {
+    font-size: 1.5rem;
+    color: #0067b3;
+}
+
+/* 2. About */
+.about {
+    height: 630px;
+}
+
+.carousel-item img {
+    height: 630px;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 35px;
+    height: 100%;
+    padding: 0 200px;
+}
+
+.carousel-item .row-align {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-item .row .carousel-text-align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.carousel-item .btn{
+    font-weight: 600;
+}
+
+/* 3. Popular Courses */
+.popular > h2{
+    margin-top: 100px;
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+.popular .row{
+    justify-content: center;
+}
+.popular .card{
+    margin-left: 10px;
+    width: 20rem;
+    color: #0c2d48;
+}
+.popular .card .card-title{
+    font-weight: 500;
+    color: #0067b3;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.popular .card .card-title:hover{
+    color: #0c2d48;
+    text-decoration: underline;
+}
+.popular .card-body{
+    height: 270px;
+    position: relative;
+}
+.popular .card-body .btn{
+    position: absolute;
+    bottom: 25px;
+    width: 89%;
+    font-weight: 600;
+    color: #0c2d48;
+    border: none;
+    transition: all 0.3s;
+}
+.popular .card-body .btn:hover{
+    background-color: #0c2d48;
+    color: white;
+}
+.popular > .btn{
+    margin-top: 10px;
+    color: #0067b3;
+    transition: all 0.3s;
+}
+.popular > .btn:hover{
+    color: white;
+    background-color: #0c2d48;
+    border: #0c2d48;
+}
+.popular img{
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* 4. Category */
+.category{
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+.category > h2{
+    height: 100px;
+    align-content: center;
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+.category > .row{
+    justify-content: center;
+}
+.category .card > .row{
+    height: 200px;
+}
+.category a{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 250px;
+    height: 100%;
+    padding: 0 20px;
+}
+.category .card{
+    border: none;
+    padding: 0;
+    color: #0c2d48;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.category .card:hover{
+    background-color: #0c2d48;
+    color: white;
+}
+.category .image-container{
+    overflow: hidden;
+    width: 91.328px;
+    height: 91.328px;
+    
+}
+.category img{
+    width: 91.328px;
+    height: 91.328px;; */
+    {object-fit: cover;}
+}
+
+/* 5. Testimonial */
+.testimonial{
+    margin-top: 100px;
+}
+.testimonial h2{
+    line-height: 100px;
+    align-content: center;
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+.testimonial .row{
+    justify-content: center;
+}
+.testimonial-container{
+    margin: 30px;
+    width: 300px;
+    text-align: center;
+}
+.testimonial-container img{
+    text-align: center;
+    width: 250px;
+    border-radius: 50%;
+    margin: 30px 0 ;
+}
+.testimonial h5{
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+/* 6. Call to Action */
+.call-to-action{
+    background-color: #FFCA2B;
+    padding: 8%;
+    padding-bottom: 3%;
+    color: #0067b3;
+}
+.call-to-action h1{
+    font-weight: 800;
+    text-align: center;
+}
+.call-to-action .btn{
+    display: block;
+    margin: 10px auto;
+    height: 4rem;
+    width: 15rem;
+    background-color: #0067b3;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+.call-to-action .btn:hover{
+    background-color: #0c2d48;
+}
+
+/* 7. Footer */
+footer{
+    padding: 5% 10% 1%;
+}
+.footer-content h5{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.footer-content ul{
+    list-style-type: none;
+    padding-left: 16px;
+}
+.footer-content .footer-link{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+.footer-content .footer-link:hover{
+    text-decoration: underline;
+}
+footer p{
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding: 3%;
+    text-align: center;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 767px) {
+    .footer-content h5{
+        font-size: 1rem;
+    }
+    .footer-content .footer-link{
+        font-size: 1rem;
+    }
+}
