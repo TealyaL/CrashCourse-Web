@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.container-fluid {
+    padding: 0 5%;
+}
+
+.blue-section {
+    background-color: #0067b3;
+    color: white;
+}
+
+.white-section {
+    background-color: white;
+    color: #0067b3;
+}
+
+/* 1.Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-header {
+    background-color: white !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 150px;
+    height: 90px;
+}
+
+.nav-link {
+    color: #0067b3;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #0c2d48;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 2px 2px 0 0 rgb(255, 255, 255, 0.5);
+}
+
+.navbar-toggler>i {
+    font-size: 1.5rem;
+    color: #0067b3;
+}
+
+/* 2. Title */
+.title{
+    background: linear-gradient(rgba(0, 0, 0,0.25), rgba(0, 0, 0, 0.25)), url(../img/background.png);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.course-image{
+    overflow: hidden;
+    height: 400px;
+    width: 600px;
+}
+.course-image img{
+    width: 600px;
+    height: 400px; */
+    {object-fit: cover;}
+}
+.course-title{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 3rem;
+}
+.course-title h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.course-title a{
+    width: 200px;
+    font-weight: 600;
+    color: #0c2d48;
+    transition: all 0.3s;
+}
+
+.course-title a:hover{
+    background-color: #0c2d48;
+    color: white;
+    border-color: #0c2d48;
+}
+/* 3. Description */
+.description{
+    margin: 5% 0;
+}
+/* 3. 1 Stats */
+.stats{
+    margin-bottom: 3%;
+    font-size: 1.2rem;
+}
+.card{
+    border: 1px solid rgba(12, 45, 72, 0.25);
+    border-radius: 15px;
+}
+.card-body{
+    color: #0067b3;
+    font-size: 1.2rem;
+}
+.card-body h5{
+    font-size: 1.75rem;
+}
+
+/* 3.2 Description */
+.description > h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.description > p{
+    font-size: 1.5rem;
+}
+.description > ul{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 4. CTA */
+.cta{
+    background-color: #FFCA2B;
+    padding: 8%;
+    padding-bottom: 3%;
+    color: #0067b3;
+}
+.cta h1{
+    font-weight: 800;
+    text-align: center;
+}
+.cta .btn{
+    display: block;
+    margin: 20px auto;
+    height: 4rem;
+    width: 15rem;
+    background-color: #0067b3;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    transition: all 0.3s;
+}
+.cta .btn:hover{
+    background-color: #0c2d48;
+}
+
+
+/* 5. Footer */
+footer{
+    padding: 5% 10% 1%;
+}
+.footer-content h5{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.footer-content ul{
+    list-style-type: none;
+    padding-left: 16px;
+}
+.footer-content .footer-link{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+.footer-content .footer-link:hover{
+    text-decoration: underline;
+}
+footer p{
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding: 3%;
+    text-align: center;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 767px) {
+    .footer-content h5{
+        font-size: 1rem;
+    }
+    .footer-content .footer-link{
+        font-size: 1rem;
+    }
+}

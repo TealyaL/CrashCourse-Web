@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.container-fluid {
+    padding: 0 5%;
+}
+
+.blue-section {
+    background-color: #0067b3;
+    color: white;
+}
+
+.white-section {
+    background-color: white;
+    color: #0067b3;
+}
+
+/* 1.Header - Navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-header {
+    background-color: white !important;
+}
+
+nav > .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 150px;
+    height: 90px;
+}
+
+.navbar-nav > .nav-link {
+    color: #0067b3;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.navbar-nav > .nav-link:hover {
+    color: white;
+    background-color: #0c2d48;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 2px 2px 0 0 rgb(255, 255, 255, 0.5);
+}
+
+.navbar-toggler>i {
+    font-size: 1.5rem;
+    color: #0067b3;
+}
+
+/* 2. Header - Title */
+.title{
+    background: linear-gradient(rgba(0, 0, 0,0.25), rgba(0, 0, 0, 0.25)), url(../img/background.png);
+    padding: 3% 5%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 220px;
+}
+.title h2{
+    font-weight: 700;
+}
+.title p{
+    margin-bottom: 10px;
+}
+.title .btn{
+    font-weight: 600;
+    color: #0c2d48;
+    transition: all 0.3s;
+}
+.title .btn:hover{
+    color: white;
+    background-color: #0c2d48;
+    border: #0c2d48;
+}
+/* 3. Content Navbar */
+.content-nav-bar{
+    margin-bottom: 1%;
+}
+.nav-link.active{
+    color: #0c2d48 !important;
+}
+.nav-link{
+    color: #0067b3;
+    font-size: 1.2rem;
+}
+/* 4. Card */
+.courses{
+    padding: 3% 5%;
+}
+
+.courses .row{
+    justify-content: center;
+}
+.courses .card{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 20rem;
+    color: #0c2d48;
+}
+.courses .card .card-title{
+    font-weight: 500;
+    color: #0067b3;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.courses .card .card-title:hover{
+    color: #0c2d48;
+    text-decoration: underline;
+}
+.courses .card-body{
+    height: 270px;
+    position: relative;
+}
+.courses .card-body .btn{
+    position: absolute;
+    bottom: 25px;
+    width: 89%;
+    font-weight: 600;
+    color: #0c2d48;
+}
+.courses img{
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.courses .btn{
+    margin-top: 10px;
+    color: #0067b3;
+    transition: all 0.3s;
+}
+.courses .btn:hover{
+    color: white;
+    background-color: #0c2d48;
+    border: #0c2d48;
+}
+
+/* 5. Footer */
+footer{
+    padding: 5% 10% 1%;
+}
+.footer-content h5{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.footer-content ul{
+    list-style-type: none;
+    padding-left: 16px;
+}
+.footer-content .footer-link{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+.footer-content .footer-link:hover{
+    text-decoration: underline;
+}
+footer p{
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding: 3%;
+    text-align: center;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 767px) {
+    .footer-content h5{
+        font-size: 1rem;
+    }
+    .footer-content .footer-link{
+        font-size: 1rem;
+    }
+}
