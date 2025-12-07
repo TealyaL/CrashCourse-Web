@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "category": "Computer Science",
+        "title": "Python for Everybody",
+        "description": "Learn to Program and Analyze Data with Python. Develop programs to gather, clean, analyze, and visualize data.",
+        "image": "./img/python-course.png",
+        "page": "./python.html",
+        "instructor": "Charles Russell Severance",
+        "enrolledNum": "12,826",
+        "length": 5,
+        "lengthDescription": "Get in-depth knowledge of a subject.",
+        "rating": 4.8,
+        "feedbackNum": "2,691",
+        "level": "Beginner",
+        "like": 89,
+        "learningDescription": 
+
+    },
+    {
+        "id": 2,
+        "category": "Business",
+        "title": "Foundations of Project Management",
+        "description": "Upgrade yourself with these fundamental skills to manage projects.",
+        "image": "./img/project-managing-course.png",
+        "page": "./project-mag.html"
+    },
+    {
+        "category": "Health",
+        "title": "Vital Signs: Understanding What the Body Is Telling Us",
+        "description": "Explore the anatomy and physiology underlying the vital signs so that you will develop a systematic, integrated understanding of how the body functions.",
+        "image": "./img/health-course.png",
+        "page": "./health.html"
+    },
+    {
+        "id": 4,
+        "category": "Health",
+        "title": "Introductory Human Physiology",
+        "description": "Discover the fascinating world of human physiology and learn about the body's organ systems, their functions, and how they maintain health.",
+        "image": "./img/physiology-course.png",
+        "page": "./physiology.html"
+    },
+    {
+        "id": 5,
+        "category": "Health",
+        "title": "Introduction to Social Psychology",
+        "description": "Learn the classic and contemporary social psychology , covering topics such as decision making, persuasion, and factors that promote health and well-being.",
+        "image": "./img/psychology-coursse.png",
+        "page": "./psychology.html"
+    },
+    {
+        "id": 6,
+        "category": "Computer Science",
+        "title": "Machine Learning",
+        "description": "Build Intelligent Applications. Master machine learning fundamentals in four hands-on courses.",
+        "image": "./img/machine-learning-course.png",
+        "page": "./machine.html"
+    },
+    {
+        "id": 7,
+        "category": "Physical Science",
+        "title": "Astronomy: Exploring Time and Space",
+        "description": "Learn more about modern astronomy and get up to date on the most recent astronomical discoveries without prior knowledge in science.",
+        "image": "./img/astronomy-course.png",
+        "page": "./astronomy.html"
+    },
+    {
+        "id": 8,
+        "category": "Business",
+        "title": "Financial Markets",
+        "description": "Introduction to risk management and behavioral finance principles to understand the real-world functioning of securities, insurance, and banking industries.",
+        "image": "./img/financial-market-course.png",
+        "page": "./financial.html"
+    }
+]
