@@ -1,5 +1,5 @@
 const fetchData = async () =>{
-    let response = await fetch("./data.json");
+    let response = await fetch("./data/data.json");
     let allData = await response.json();
     
     data = allData.filter(item => item.category === "Health");
