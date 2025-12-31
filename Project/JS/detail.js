@@ -45,7 +45,7 @@ const fetchDetail = async () => {
                     <div class="course-title col-lg-6">
                         <h2>${course.title}</h2>
                         <p>Instructor: ${course.instructor}</p>
-                        <a href="#" class="btn btn-warning btn-lg">Enroll for Free!</a>
+                        <a href="#" onclick="addItem()" class="btn btn-warning btn-lg">Enroll for Free!</a>
                         <p>${course.enrolledNum} already enrolled</p>
                     </div>
                 </div>
@@ -104,5 +104,37 @@ const fetchDetail = async () => {
         `
     }
 }
+
+const currentUser = localStorage.getItem('currentUser');
+
+const addItem = async () => {
+    if (currentUser) {
+        const params = new URLSearchParams(window.location.search);
+        const courseId = parseInt(params.get("id"));
+
+        const response = await fetch("./data/data.json");
+        const data = await response.json();
+
+        const course = data.find(c => c.id === courseId);
+
+        let joinedClass = JSON.parse(localStorage.getItem("joinedClass")) || [];
+
+        const alreadyJoined = joinedClass.find(c => c.id === courseId);
+        if (alreadyJoined) {
+            alert("You have already enrolled in this course!");
+            return;
+        } else {
+            joinedClass.push(course);
+        }
+
+        localStorage.setItem("joinedClass", JSON.stringify(joinedClass));
+
+        alert("Successfully enrolled in this course!");
+    } else{
+        alert("Please login to join this course.")
+        window.location.href = './login.html'
+    }
+};
+
 
 fetchDetail()

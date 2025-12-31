@@ -1,0 +1,18 @@
+[
+    {
+        "key": "computer_science",
+        "name": "Computer Science"
+    },
+    {
+        "key": "business",
+        "name": "Business"
+    },
+    {
+        "key": "health",
+        "name": "Health"
+    },
+    {
+        "key": "physical_science",
+        "name": "Physical Science"
+    }
+]
