@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python for Everybody | CrashCourse Ed</title>
+    <title>Explore | CrashCourse Ed</title>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
@@ -21,20 +21,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./CSS/detail.css">
+    <link rel="stylesheet" href="./CSS/explore.css">
 </head>
 
 <body>
-    <!-- header -->
+    <!-- header (navbar) -->
     <header class="white-section container-fluid"></header>
 
-    <section class="course-detail">
+    <!-- header (title) -->
+    <section class="title blue-section container-fluid">
+        <h2>Most popular courses and skills</h2>
+        <p>Explore our top courses and skills, loved by learners and developed by leading experts.</p>
+        <a href="./signup.html" class="btn btn-warning">Start Now!</a>
     </section>
 
-    <!-- cta -->
-    <section class="cta">
-        <h1>Enroll for free and get more access to free courses, update, and offers.</h1>
-        <a href="#" class="btn btn-lg">Enroll Now!</a>
+    <!-- courses -->
+    <section class="courses white-section container-fluid">
+        <div class="content-nav-bar">
+            <ul class="nav nav-underline">
+                <li class="nav-item">
+                    <a class="nav-link" href="./explore.html">All Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./explore.html?category=computer_science">Computer Science</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./explore.html?category=business">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./explore.html?category=health">Health</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./explore.html?category=physical_science">Physical Science</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row" id="course-list"></div>
     </section>
 
     <!-- footer -->
@@ -46,7 +69,7 @@
         crossorigin="anonymous"></script>
     <!-- JS -->
     <script src="./JS/header_footer.js"></script>
-    <script src="./JS/detail.js"></script>
+    <script src="./JS/explore.js"></script>
 </body>
 
 </html>
