@@ -69,14 +69,14 @@ const renderClassItem = async () => {
 
         classContainer.innerHTML += `
         <div class="card col-lg-3 col-md-6">
-            <a href="./explore-all.html">
+            <a href="./explore.html">
                 <div class="card-img-top gray">
                     <p><i class="fa-solid fa-circle-plus"></i></p>
                 </div>
             </a>
             <div class="card-body">
                 <h5>Add more course</h5>
-                <a href="./explore-all.html" class="btn btn-warning">Go</a>
+                <a href="./explore.html" class="btn btn-warning">Go</a>
             </div>
         </div>
     `}

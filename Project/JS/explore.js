@@ -7,7 +7,6 @@ const fetchAndRenderCourses = async () => {
     const params = new URLSearchParams(window.location.search);
     const category = params.get("category");
 
-    let filteredData = category
     if (category){
         filteredData = data.filter(course => course.category === category);
     } else{
