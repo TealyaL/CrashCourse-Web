@@ -9,6 +9,7 @@ const fetchDetail = async () => {
 
     let courseTitle = document.querySelector("title");
     let detailContainer = document.querySelector(".course-detail");
+    
     if (course) {
         let learningOutcomeHtml = course.learningOutcome.map(criteria => {
             return `<li>${criteria}</li>`
@@ -45,7 +46,7 @@ const fetchDetail = async () => {
                     <div class="course-title col-lg-6">
                         <h2>${course.title}</h2>
                         <p>Instructor: ${course.instructor}</p>
-                        <a href="#" onclick="addItem()" class="btn btn-warning btn-lg">Enroll for Free!</a>
+                        <a href="#" onclick="addItem()" class="enroll btn btn-warning btn-lg">Enroll for Free!</a>
                         <p>${course.enrolledNum} already enrolled</p>
                     </div>
                 </div>
