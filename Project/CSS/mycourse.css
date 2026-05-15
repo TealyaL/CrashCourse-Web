@@ -27,7 +27,7 @@ body {
     color: #0c2d48;
     border: none;
     transition: all 0.3s;
-    width: 100px;
+    width: 97px;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
@@ -93,11 +93,24 @@ header {
 .content-container{
     text-align: center;
 }
+.admin-page{
+    width: 60%;
+    background-color: #10a361;
+}
 .joined-classes{
     text-align: center;
 }
 .card{
     margin-left: 20px;
+    height: 100%;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-buttons {
+    margin-top: auto;
 }
 .card-img-top{
     height: 150px;

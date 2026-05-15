@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.container-fluid {
+    padding: 0 5%;
+}
+
+.blue-section {
+    background-color: #0067b3;
+    color: white;
+}
+
+.white-section {
+    background-color: white;
+    color: #0c2d48;
+}
+
+.btn{
+    font-weight: 600;
+    color: #0c2d48;
+    border: none;
+    transition: all 0.3s;
+    width: 100px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: #0c2d48;
+    color: white;
+}
+
+/* 1.Header */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-header {
+    background-color: white !important;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 150px;
+    height: 90px;
+}
+
+.nav-link {
+    color: #0067b3;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #0c2d48;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 2px 2px 0 0 rgb(255, 255, 255, 0.5);
+}
+
+.navbar-toggler>i {
+    font-size: 1.5rem;
+    color: #0067b3;
+}
+
+/* 2. Main Content */
+.sidebar-container {
+    position: sticky;
+    top: 120px;
+    height: fit-content;
+    min-height: calc(100vh - 120px);
+    padding: 0;
+}
+.menu{
+    list-style-type: none;
+}
+.menu > li{
+    padding: 7%;
+    padding-left: 48px;
+    border: solid, #00528f;
+}
+.content-container {
+    padding: 2% 3%;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-title h5 {
+    font-weight: 600;
+    color: #0067b3;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.card .btn {
+    width: 100%;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+h2{
+    font-size: 2.75rem;
+    font-weight: 600;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+p{
+    margin: 2%;
+    font-size: 1.35rem;
+    text-align: center;
+}
+i{
+    color: #0c2d48;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.35rem;
+}
+.add{
+    background-color: #10a361;
+    width: 150px;
+    margin-right: 2%;
+}
+.remove{
+    width: 160px;
+}
+
+/* Courses */
+.courses{
+    padding: 3% 5%;
+}
+
+.courses .card{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 20rem;
+    color: #0c2d48;
+}
+.courses .card .card-title{
+    font-weight: 500;
+    color: #0067b3;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.courses .card .card-title:hover{
+    color: #0c2d48;
+    text-decoration: underline;
+}
+.courses .card-body{
+    height: 270px;
+    position: relative;
+}
+.courses .card-body .btn{
+    position: absolute;
+    bottom: 25px;
+    width: 89%;
+    font-weight: 600;
+    color: #0c2d48;
+}
+.courses img{
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.courses .btn{
+    margin-top: 10px;
+    color: #0067b3;
+    transition: all 0.3s;
+}
+.courses .btn:hover{
+    color: white;
+    background-color: #0c2d48;
+    border: #0c2d48;
+}
+
+/* Add form */
+.radio{
+    padding-right: 15px;
+}
+.remove-btn{
+    margin: 0;
+}

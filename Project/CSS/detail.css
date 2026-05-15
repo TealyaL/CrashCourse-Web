@@ -69,7 +69,7 @@ header {
 
 /* 2. Title */
 .title{
-    background: linear-gradient(rgba(0, 0, 0,0.25), rgba(0, 0, 0, 0.25)), url(../img/background.png);
+    background: linear-gradient(rgba(0, 0, 0,0.25), rgba(0, 0, 0, 0.25)), url(https://res.cloudinary.com/dhiggdlws/image/upload/v1778324173/background_f9w04b.png);
     font-size: 1.5rem;
     font-weight: 600;
 }

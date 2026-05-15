@@ -1,11 +1,13 @@
+import { categories } from "./category.js";
+
 // header
 const displayHeader = () => {
-    header = document.querySelector('header');
+    const header = document.querySelector('header');
     header.innerHTML =
         `
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-header">
         <a class="navbar-brand" href="./index.html">
-            <img class="logo" src="./img/logo.png" alt="Crash Course Ed's logo">
+            <img class="logo" src="https://res.cloudinary.com/dhiggdlws/image/upload/v1778324171/logo_i8k3sh.png" alt="Crash Course Ed's logo">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,7 +25,7 @@ const displayHeader = () => {
     </nav>
     `;
 
-    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    const currentUser = JSON.parse(localStorage.getItem('user_session'));
     if (currentUser) {
         document.querySelector('.account-header').innerText = 'My Account';
         document.querySelector('.account-header').href = './mycourse.html';
@@ -33,9 +35,8 @@ displayHeader();
 
 // footer
 const displayFooter = async () => {
-    footer = document.querySelector('footer');
+    const footer = document.querySelector('footer');
     if (footer) {
-        categories = await (await fetch('./data/categories.json')).json();
 
         footer.innerHTML = `
         <div class="row">
@@ -79,7 +80,7 @@ const displayFooter = async () => {
         `;
         }).join("");
 
-        const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        const currentUser = JSON.parse(localStorage.getItem('user_session'));
         if (currentUser) {
             document.querySelector('.account-footer').innerText = 'My Account';
             document.querySelector('.account-footer').href = './mycourse.html';
